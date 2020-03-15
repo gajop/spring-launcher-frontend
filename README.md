@@ -1,6 +1,8 @@
 ## Building for production
 
-`ng build --prod --env=prod`
+`ng build --prod`
+`cp firebase.json dist/frontend`
+`firebase deploy`
 
 -- Generated info below --
 
