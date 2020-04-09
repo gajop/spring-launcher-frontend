@@ -5,25 +5,33 @@
 
   <div class="collapse navbar-collapse">
     <div class="navbar-nav">
-      <a
+      <!-- TODO: Games, or not? -->
+      <!-- <a
         class="nav-item nav-link active"
         routerLink="/game"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
         >Games</a
-      >
+      > -->
       <!-- <a class="nav-item nav-link" routerLink="/dev" routerLinkActive="active"
         >Developers</a
       > -->
       <a class="nav-item nav-link" routerLink="/repo" routerLinkActive="active"
         >Repositories</a
       >
-      <a
+      <!-- TODO: login through GH -->
+      <!-- <a
         class="nav-item nav-link"
         routerLink="/auth"
         routerLinkActive="active"
         *ngIf="!user"
         >Login</a
+      > -->
+      <a
+        class="nav-item nav-link"
+        routerLink="/github-app"
+        routerLinkActive="active"
+      >Github App</a
       >
       <span *ngIf="user"
         ><img [src]="user.github_avatar_url" style="max-width: 50px" />{{

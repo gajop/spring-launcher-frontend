@@ -7,9 +7,10 @@ import {GameListComponent} from './game/game-list/game-list.component';
 import {GameComponent} from './game/game/game.component';
 import {RepoListComponent} from './repo/repo-list/repo-list.component';
 import {RepoComponent} from './repo/repo/repo.component';
+import { GithubAppLinkComponent } from './github-app-link/github-app-link.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: '/game'}, {
+  {path: '', pathMatch: 'full', redirectTo: '/repo'}, {
     path: 'game',
     children: [
       {path: '', component: GameListComponent, pathMatch: 'full'},
@@ -25,6 +26,7 @@ const routes: Routes = [
     ]
   },
   {path: 'auth/github/callback', component: AuthComponent},
+  {path: 'github-app', component: GithubAppLinkComponent},
   // { path: 'auth/github', component: GithubAuthComponent },
 ];
 

@@ -19,6 +19,7 @@ import { RepoComponent } from './repo/repo/repo.component';
 import { MaxLengthPipe } from './util/max-length.pipe';
 import { UserFriendlyDatePipe } from './util/user-friendly-date.pipe';
 import { UserFriendlyTimespanPipe } from './util/user-friendly-timespan.pipe';
+import { GithubAppLinkComponent } from './github-app-link/github-app-link.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { UserFriendlyTimespanPipe } from './util/user-friendly-timespan.pipe';
     RepoComponent,
     MaxLengthPipe,
     UserFriendlyDatePipe,
-    UserFriendlyTimespanPipe
+    UserFriendlyTimespanPipe,
+    GithubAppLinkComponent
   ],
   imports: [
     AppRoutingModule, BrowserModule, BrowserAnimationsModule, NgbModule,
