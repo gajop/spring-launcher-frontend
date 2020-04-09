@@ -1,8 +1,12 @@
 ## Building for production
 
-`ng build --prod`
-`cp firebase.json dist/frontend`
-`firebase deploy`
+```sh
+ng build --prod
+cp firebase.json dist/frontend
+cd dist/frontend
+firebase init
+firebase deploy
+```
 
 -- Generated info below --
 
